@@ -49,16 +49,16 @@
         </thead>
         <tbody>
             <!-- This loop only works if you visit http://localhost:3000/admin/dashboard -->
-            <% products.forEach(product => { %>
+           
                 <tr class="<%= !product.status ? 'inactive-row' : '' %>">
                     <td>
-                        <strong><%= product.product_name %></strong>
+                        <strong> Nike air force 1 </strong>
                     </td>
-                    <td><code><%= product.SKU %></code></td>
-                    <td><%= product.inventory_count %></td>
+                    <td><code>Blk-uk6 </code></td>
+                    <td>Expensive</td>
                     <td>
                         <span class="badge <%= product.status ? 'status-active' : 'status-inactive' %>">
-                            <%= product.status ? 'Active' : 'Inactive' %>
+                            Instock
                         </span>
                     </td>
                     <td>
@@ -71,7 +71,7 @@
                         </form>
                     </td>
                 </tr>
-            <% }); %>
+          
         </tbody>
     </table>
 
