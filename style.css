@@ -1,0 +1,127 @@
+/* General Layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1, h3 {
+    color: #2c3e50;
+    border-left: 5px solid #27ae60;
+    padding-left: 15px;
+}
+
+/* Form Container Styling */
+.form-container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #7f8c8d;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Button Styling */
+button {
+    padding: 11px 20px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #219150;
+}
+
+.btn-deactivate {
+    background-color: #e74c3c;
+}
+
+.btn-deactivate:hover {
+    background-color: #c0392b;
+}
+
+.btn-deactivate:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+/* Product Table Styling */
+table {
+    width: 100%;
+    background: #fff;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+th {
+    background-color: #34495e;
+    color: white;
+    text-align: left;
+    padding: 15px;
+    font-size: 14px;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background-color: #fcfcfc;
+}
+
+/* Status Badges */
+.badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.status-active {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-inactive {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Row Styling for Deactivated Items */
+.inactive-row {
+    background-color: #f9f9f9;
+    color: #95a5a6;
+}
